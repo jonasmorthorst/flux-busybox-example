@@ -26,3 +26,13 @@ spec:
           limits:
             memory: "128Mi"
             cpu: "100m"
+      - name: busybox-2
+        image: busybox:latest
+        command: ["sleep", "3600"]
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "50m"
+          limits:
+            memory: "128Mi"
+            cpu: "100m"
